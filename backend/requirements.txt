@@ -1,0 +1,13 @@
+httpx
+requests
+fastapi
+uvicorn
+pydantic
+python-multipart
+pypdf2
+pymupdf
+python-dotenv
+ollama
+pydantic-settings
+reportlab
+

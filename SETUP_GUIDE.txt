@@ -1,0 +1,335 @@
+╔═══════════════════════════════════════════════════════════════════════╗
+║           RESUME SHORTLISTER AI - COMPLETE PROJECT                    ║
+║                    SETUP & USAGE GUIDE                                 ║
+╚═══════════════════════════════════════════════════════════════════════╝
+
+✅ PROJECT STATUS: 100% COMPLETE AND READY TO USE!
+
+┌───────────────────────────────────────────────────────────────────────┐
+│                    📁 PROJECT FILES CREATED                            │
+└───────────────────────────────────────────────────────────────────────┘
+
+ROOT DIRECTORY:
+  ✓ README.md                    - Main documentation
+  ✓ QUICKSTART.md                - Quick setup guide
+  ✓ ARCHITECTURE.md              - Technical architecture
+  ✓ TESTING.md                   - Testing documentation
+  ✓ PROJECT_SUMMARY.md           - Complete project overview
+  ✓ WORKFLOW_DIAGRAM.md          - Visual workflow
+  ✓ .gitignore                   - Git ignore rules
+  ✓ setup.bat                    - Windows setup script
+  ✓ start.bat                    - Windows start script
+
+BACKEND DIRECTORY (Python/FastAPI):
+  ✓ main.py                      - FastAPI application
+  ✓ models.py                    - Pydantic data models
+  ✓ resume_parser.py             - PDF parsing
+  ✓ phase1_shortlister.py        - Keyword filtering
+  ✓ phase2_shortlister.py        - LLM integration
+  ✓ mcp_tools.py                 - MCP tools
+  ✓ create_sample_resumes.py    - Sample data generator
+  ✓ test_api.py                  - API testing
+  ✓ requirements.txt             - Python dependencies
+  ✓ .env                         - Configuration
+
+FRONTEND DIRECTORY (React):
+  ✓ package.json                 - Node dependencies
+  ✓ vite.config.js               - Vite configuration
+  ✓ index.html                   - Entry HTML
+  ✓ src/main.jsx                 - React entry point
+  ✓ src/App.jsx                  - Main app component
+  ✓ src/index.css                - Global styles
+  ✓ src/api.js                   - API client
+  ✓ src/components/JobPostingForm.jsx
+  ✓ src/components/ResumeUploader.jsx
+  ✓ src/components/Dashboard.jsx
+  ✓ src/components/ShortlistedCandidates.jsx
+
+┌───────────────────────────────────────────────────────────────────────┐
+│                    🚀 QUICK START (3 STEPS)                            │
+└───────────────────────────────────────────────────────────────────────┘
+
+STEP 1: Install Prerequisites
+  • Python 3.9+  → https://www.python.org/
+  • Node.js 18+  → https://nodejs.org/
+  • Ollama       → https://ollama.ai/
+
+STEP 2: Run Setup (One Command!)
+  .\setup.bat
+
+STEP 3: Start Application (One Command!)
+  .\start.bat
+
+STEP 4: Open Browser
+  Navigate to: http://localhost:3000
+
+┌───────────────────────────────────────────────────────────────────────┐
+│                    📖 MANUAL SETUP (If needed)                         │
+└───────────────────────────────────────────────────────────────────────┘
+
+1. SETUP OLLAMA:
+   ollama serve
+   ollama pull ministral:3b
+
+2. BACKEND SETUP:
+   cd backend
+   python -m venv .venv
+   .venv\Scripts\activate
+   pip install -r requirements.txt
+   mkdir uploads
+   mkdir resumes
+
+3. FRONTEND SETUP:
+   cd frontend
+   npm install
+
+4. START BACKEND:
+   cd backend
+   .venv\Scripts\activate
+   python main.py
+   # Runs on http://localhost:8000
+
+5. START FRONTEND:
+   cd frontend
+   npm run dev
+   # Runs on http://localhost:3000
+
+┌───────────────────────────────────────────────────────────────────────┐
+│                    🎯 HOW TO USE THE APPLICATION                       │
+└───────────────────────────────────────────────────────────────────────┘
+
+WORKFLOW:
+
+1️⃣  CREATE JOB POSTING
+   • Fill in job title and description
+   • Add required tech stack (comma-separated)
+     Example: Python, React, FastAPI, Docker
+   • Set minimum experience (years)
+   • Set hiring slots
+   • Configure Phase 1 shortlist count (e.g., 10)
+   • Configure Phase 2 shortlist count (e.g., 5)
+   • Click "Create Job Posting"
+
+2️⃣  UPLOAD RESUMES
+   • Click the upload area
+   • Select your PDF file (one resume per page)
+   • Click "Upload and Process Resumes"
+   • Wait for confirmation
+
+3️⃣  START SHORTLISTING
+   • Click "Start Shortlisting Process"
+   • Watch real-time progress on dashboard
+   • Phase 1: Keyword matching (fast)
+   • Phase 2: AI review (may take time)
+
+4️⃣  VIEW RESULTS
+   • See dashboard statistics
+   • Browse shortlisted candidates
+   • Click to expand candidate details
+   • View confidence scores
+   • Read AI-generated cover letters
+
+┌───────────────────────────────────────────────────────────────────────┐
+│                    🧪 TESTING WITH SAMPLE DATA                         │
+└───────────────────────────────────────────────────────────────────────┘
+
+GENERATE SAMPLE RESUMES:
+  cd backend
+  .venv\Scripts\activate
+  python create_sample_resumes.py
+  # Creates sample_resumes.pdf with 5 sample resumes
+
+TEST THE API:
+  cd backend
+  .venv\Scripts\activate
+  python test_api.py
+  # Tests all API endpoints
+
+┌───────────────────────────────────────────────────────────────────────┐
+│                    🎨 KEY FEATURES                                     │
+└───────────────────────────────────────────────────────────────────────┘
+
+✅ Two-Phase Shortlisting System
+   • Phase 1: Keyword + Experience (No LLM, fast)
+   • Phase 2: AI Comprehensive Review (LLM-powered)
+
+✅ Intelligent PDF Processing
+   • Multi-page PDF support
+   • Automatic text extraction
+   • Metadata parsing (name, email, skills, experience)
+
+✅ Real-Time Dashboard
+   • Live status updates (3-second polling)
+   • Progress tracking
+   • Statistics visualization
+
+✅ AI-Powered Analysis
+   • Local LLM (Ollama + Ministral 3B)
+   • Confidence scoring (0-1 scale)
+   • Personalized cover letter generation
+
+✅ Beautiful UI
+   • Modern gradient design
+   • Collapsible candidate cards
+   • Responsive layout
+   • Smooth animations
+
+✅ MCP Tool Integration
+   • Structured resume analysis
+   • Tool-based LLM interaction
+   • Enhanced data extraction
+
+┌───────────────────────────────────────────────────────────────────────┐
+│                    📊 EXAMPLE OUTPUT                                   │
+└───────────────────────────────────────────────────────────────────────┘
+
+{
+  "shortlisted": [
+    {
+      "name": "John Smith",
+      "confidence": 0.95,
+      "email": "john@example.com",
+      "cv_path": "./resumes/resume_page_1.pdf",
+      "skills": ["Python", "Machine Learning", "TensorFlow"],
+      "experience": 5,
+      "cover_letter": "I am excited to apply for this position..."
+    },
+    {
+      "name": "Jane Doe",
+      "confidence": 0.92,
+      "email": "jane@example.com",
+      "cv_path": "./resumes/resume_page_2.pdf",
+      "skills": ["JavaScript", "React", "Node.js"],
+      "experience": 4,
+      "cover_letter": "With my expertise in full-stack development..."
+    }
+  ]
+}
+
+┌───────────────────────────────────────────────────────────────────────┐
+│                    ⚙️  CONFIGURATION                                   │
+└───────────────────────────────────────────────────────────────────────┘
+
+Edit backend/.env to customize:
+
+OLLAMA_BASE_URL=http://localhost:11434
+OLLAMA_MODEL=ministral:3b
+UPLOAD_DIR=./uploads
+RESUME_DIR=./resumes
+
+┌───────────────────────────────────────────────────────────────────────┐
+│                    🐛 TROUBLESHOOTING                                  │
+└───────────────────────────────────────────────────────────────────────┘
+
+ISSUE: Ollama not found
+SOLUTION:
+  • Install Ollama from https://ollama.ai/
+  • Run: ollama serve
+  • Pull model: ollama pull ministral:3b
+
+ISSUE: Backend won't start
+SOLUTION:
+  • Check Python version: python --version (need 3.9+)
+  • Activate venv: .venv\Scripts\activate
+  • Install deps: pip install -r requirements.txt
+
+ISSUE: Frontend won't start
+SOLUTION:
+  • Check Node version: node --version (need 18+)
+  • Install deps: npm install
+  • Check port 3000 is free
+
+ISSUE: LLM is slow
+SOLUTION:
+  • Normal for first request (model loading)
+  • Consider faster model if needed
+  • Increase timeout in phase2_shortlister.py
+
+ISSUE: PDF parsing fails
+SOLUTION:
+  • Ensure PDF is not password-protected
+  • One resume per page works best
+  • Check PyMuPDF is installed
+
+┌───────────────────────────────────────────────────────────────────────┐
+│                    📚 DOCUMENTATION FILES                              │
+└───────────────────────────────────────────────────────────────────────┘
+
+For more details, see:
+  • README.md           - Full project documentation
+  • QUICKSTART.md       - Fast setup instructions
+  • ARCHITECTURE.md     - Technical deep dive
+  • TESTING.md          - Testing guide
+  • WORKFLOW_DIAGRAM.md - Visual flow charts
+  • PROJECT_SUMMARY.md  - Complete overview
+
+┌───────────────────────────────────────────────────────────────────────┐
+│                    💡 TIPS & BEST PRACTICES                            │
+└───────────────────────────────────────────────────────────────────────┘
+
+✓ Start with small PDF (5-10 resumes) for testing
+✓ Phase 1 count should be 2-3x Phase 2 count
+✓ Keep Ollama running throughout
+✓ Monitor backend logs for errors
+✓ Use Chrome/Edge for best experience
+✓ Generate sample data for quick testing
+
+┌───────────────────────────────────────────────────────────────────────┐
+│                    🎓 PROJECT HIGHLIGHTS                               │
+└───────────────────────────────────────────────────────────────────────┘
+
+TECHNOLOGY STACK:
+  Backend:  Python, FastAPI, PyMuPDF, Pydantic
+  Frontend: React, Vite, Axios
+  AI/ML:    Ollama, Ministral 3B, MCP Tools
+
+ARCHITECTURE:
+  • RESTful API design
+  • Async background processing
+  • Real-time status polling
+  • Component-based UI
+  • Local LLM inference
+
+FEATURES:
+  • Two-phase intelligent filtering
+  • PDF parsing and extraction
+  • AI confidence scoring
+  • Cover letter generation
+  • Real-time dashboard
+  • Beautiful responsive UI
+
+┌───────────────────────────────────────────────────────────────────────┐
+│                    ✅ VERIFICATION CHECKLIST                           │
+└───────────────────────────────────────────────────────────────────────┘
+
+Before first use, verify:
+  □ Ollama is installed and running
+  □ Ministral:3b model is downloaded
+  □ Python 3.9+ is installed
+  □ Node.js 18+ is installed
+  □ Backend dependencies installed
+  □ Frontend dependencies installed
+  □ Port 8000 is available
+  □ Port 3000 is available
+  □ Port 11434 is available (Ollama)
+
+┌───────────────────────────────────────────────────────────────────────┐
+│                    🎉 YOU'RE ALL SET!                                  │
+└───────────────────────────────────────────────────────────────────────┘
+
+The Resume Shortlister AI application is complete and ready to use!
+
+NEXT STEPS:
+1. Run: .\setup.bat (if not done yet)
+2. Run: .\start.bat
+3. Open: http://localhost:3000
+4. Create your first job posting!
+
+For support, refer to the documentation files in the root directory.
+
+Good luck with your resume shortlisting! 🚀
+
+═══════════════════════════════════════════════════════════════════════
+Created for Ruya AI Hackathon
+Project: Resume Shortlister AI - Agentic AI Application
+═══════════════════════════════════════════════════════════════════════

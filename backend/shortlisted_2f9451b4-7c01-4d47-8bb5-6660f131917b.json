@@ -1,0 +1,107 @@
+{
+  "job_id": "2f9451b4-7c01-4d47-8bb5-6660f131917b",
+  "job_title": "Software Engineer",
+  "status": "completed",
+  "shortlisted": [
+    {
+      "name": "Aarav Mehta",
+      "confidence": 0.95,
+      "email": "aarav.mehta.dev@gmail.com",
+      "cv_path": "./resumes\\resume_page_1.pdf",
+      "skills": [
+        "Python",
+        "Go",
+        "React",
+        "Node.js",
+        "Express",
+        "SQL",
+        "PostgreSQL",
+        "MongoDB",
+        "AWS",
+        "Docker",
+        "Git",
+        "REST API"
+      ],
+      "experience": 3,
+      "cover_letter": "Dear Hiring Manager,\nI am excited to apply for the Software Engineer position at your company. With three years of experience building scalable React and Node.js applications\u2014including a fully functional E-commerce Platform (MERN stack) and a real-time chat application\u2014I am confident in my ability to contribute effectively to your team. My proficiency in Python, Docker, and REST APIs aligns well with your requirements, and I am eager to leverage my full-stack expertise to drive innovation. I would welcome the opportunity to discuss how my skills can benefit your projects.\nBest regards,\nAarav Mehta"
+    },
+    {
+      "name": "Kabir Sharma",
+      "confidence": 0.95,
+      "email": "kabir.sharma.dev@gmail.com",
+      "cv_path": "./resumes\\resume_page_5.pdf",
+      "skills": [
+        "Python",
+        "Go",
+        "React",
+        "Node.js",
+        "FastAPI",
+        "Express",
+        "MongoDB",
+        "AWS",
+        "Docker",
+        "Git",
+        "CSS"
+      ],
+      "experience": null,
+      "cover_letter": "Dear Hiring Manager,\nI\u2019m excited to apply for the Software Engineer position at your company. With three years of full-stack development experience building scalable web applications (including admin dashboards with MERN stack, JWT authentication, and Dockerized deployments on AWS), I\u2019ve honed skills in **Python (FastAPI), React, and Docker**\u2014directly aligning with your requirements. My project work, such as a **Food Delivery System** and **Stock Price Predictor**, showcases my ability to integrate frontend, backend, and cloud solutions. I\u2019d welcome the opportunity to discuss how my expertise can contribute to your team.\nBest regards,\nKabir Sharma"
+    },
+    {
+      "name": "Priya Nair",
+      "confidence": 0.95,
+      "email": "priyanair.dev@gmail.com",
+      "cv_path": "./resumes\\resume_page_7.pdf",
+      "skills": [
+        "Python",
+        "Go",
+        "React",
+        "Django",
+        "SQL",
+        "PostgreSQL",
+        "Docker",
+        "REST API"
+      ],
+      "experience": null,
+      "cover_letter": "Dear Hiring Manager,\nI am excited to apply for the Software Engineer position at your company. With my expertise in Python backend development using Django, REST APIs, and PostgreSQL, combined with my experience building interactive React-based dashboards, I am confident in my ability to contribute effectively to your team. My recent work at DataStack, where I containerized applications using Docker and designed data visualization solutions, aligns well with your requirements. I would welcome the opportunity to discuss how my skills can support your projects.\nBest regards,\nPriya Nair"
+    },
+    {
+      "name": "Rohan Iyer",
+      "confidence": 0.95,
+      "email": "rohan.iyer.dev@gmail.com",
+      "cv_path": "./resumes\\resume_page_3.pdf",
+      "skills": [
+        "Go",
+        "React",
+        "Node.js",
+        "Django",
+        "SQL",
+        "PostgreSQL",
+        "AWS",
+        "Docker",
+        "Git",
+        "CI/CD",
+        "REST API",
+        "Microservices"
+      ],
+      "experience": null,
+      "cover_letter": "Dear Hiring Manager,\nI am excited to apply for the Software Engineer position at your company. With my expertise in **Python (Django), JavaScript (React/Next.js), and cloud technologies (AWS, Docker)**, I am confident in my ability to contribute effectively to your team. My experience designing **microservices-based backends** and optimizing performance\u2014such as reducing API latency by 20%\u2014aligns well with your requirements. I would welcome the opportunity to discuss how my skills in **React, Docker, and CI/CD pipelines** can support your projects.\nBest regards,\nRohan Iyer"
+    },
+    {
+      "name": "Lucas Brown",
+      "confidence": 0.95,
+      "email": "lucas.b.dev@gmail.com",
+      "cv_path": "./resumes\\resume_page_6.pdf",
+      "skills": [
+        "Go",
+        "React",
+        "Node.js",
+        "SQL",
+        "PostgreSQL",
+        "Testing",
+        "Jest"
+      ],
+      "experience": null,
+      "cover_letter": "Dear Hiring Team,\nI\u2019m excited to apply for the Software Engineer position at your company. With my expertise in **React and Next.js**, I\u2019ve successfully developed scalable, server-side rendered applications that improved SEO and performance\u2014directly aligning with your requirements. My experience building dynamic platforms like a Netflix-style streaming service and a news portal with user authentication demonstrates my ability to handle complex frontend challenges while ensuring robustness through testing (Jest). While my background is primarily frontend-focused, my skills in **Node.js, PostgreSQL, and backend integration** make me a strong candidate for roles requiring both frontend and backend collaboration. I\u2019d welcome the opportunity to contribute my technical skills and problem-solving mindset to your team.\nBest regards,\nLucas Brown"
+    }
+  ]
+}
